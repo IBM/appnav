@@ -1,7 +1,8 @@
 # Built on Open Source, Supported by IBM
 
 IBM Application Navigator is part of 
-[IBM Cloud Pak for Applications](https://www.ibm.com/support/knowledgecenter/SSCSJL/welcome.html).  IBM Application Navigator is built from the [kAppNav open source project](https://github.com/kappnav).  The kAppNav technology is included in [Kabanero]((https://kabanero.io/)) application development technology.  IBM Cloud Pak for Applications is built from Kabanero.  
+[IBM Cloud Pak for Applications](https://www.ibm.com/support/knowledgecenter/SSCSJL/welcome.html).  IBM Application Navigator is built from the [kAppNav open source project](https://github.com/kappnav).  The kAppNav technology is included in 
+[Kabanero](https://kabanero.io/) application development technology.  IBM Cloud Pak for Applications is built from Kabanero.  
 
 IBM Cloud Pak for Applications, which includes IBM Application Navigator, is a supported project.  The Kabanero and kAppNav open source projects are community supported. 
 
