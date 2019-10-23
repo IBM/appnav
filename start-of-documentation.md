@@ -8,8 +8,10 @@ Using IBM Application Navigator, you can visually navigate to the respective com
 
 ![overview](https://github.com/IBM/appnav/blob/master/images/appnav-screens.png)
 
+IBM Application is part of IBM Cloud Pak for Applications. 
+
 ## References 
 
 1. [kAppnav open source project](https://github.com/kappnav)
-2. [kAppNav project page](https://kappnav.io)
-3. [kabanero project page](https://kabanero.io/)
+1. [kAppNav project page](https://kappnav.io)
+1. [IBM Cloud Pak for Applications](https://www.ibm.com/support/knowledgecenter/SSCSJL/welcome.html)
