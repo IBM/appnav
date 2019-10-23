@@ -12,7 +12,7 @@ This repository is the primary source of documentation IBM Application Navigator
 ## Documentation Strategy
 
 Because IBM Application Navigator (AppNav) extends Kubernetes Application Navigator (kAppNav),
-a sound documentation strategy is required to ensure minimial duplicationm reuse existing documentation and to promote the kAppNav project.
+a sound documentation strategy is required to ensure minimial duplication and to reuse existing documentation and to promote the kAppNav project.
 Before contributing documentation for AppNav, consider whether the documentation is better provided in kAppNav.
 
 ### Goals:
