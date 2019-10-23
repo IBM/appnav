@@ -9,6 +9,7 @@ IBM Application Navigator is a tool that extends the Kubernetes® console to pro
 1. [Installation](https://github.com/IBM/appnav/blob/master/install.md)
 1. [Install a sample application](https://github.com/kappnav/README#install-sample-application)
 1. [Create your first application](https://github.com/kappnav/README/blob/master/how-to-create-applications.md)
+1. [Day 2 Operations](https://github.com/kappnav/README/blob/master/actions.md)
 1. [Understanding cloud native applications](https://github.com/IBM/appnav/blob/master/cloudnative.md)
 1. [Understanding Application transformation scenario](https://www.youtube.com/watch?v=Air32LCcj0c&feature=youtu.be)
 1. [Importing WAS ND Cells](https://github.com/IBM/appnav/blob/master/importcell.md)
