@@ -27,7 +27,7 @@ Before contributing documentation for AppNav, consider whether the documentation
 ## Documentation Structure
 - IBM Application Navigator
   - Installation documentation: Knowledge Center (link TBD)
-  - Usage documentation: https://github.com/IBM/appnav
+  - Usage documentation: https://github.com/IBM/appnav/blob/master/start-of-documentation.md
 - Kabanero
   - kabanero.io guide for Application Navigator + Kabanero Collections ([appsody](https://appsody.dev) + [kappnav](https://kappnav.io))
 - Kubernetes Application Navigator
