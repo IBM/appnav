@@ -1,3 +1,5 @@
+# Import WAS ND Cell  
+
 Importing a WebSphere® Application Server Network Deployment cell creates a WAS-ND-Cell Kubernetes custom resource to 
 represent the collective. The WAS-ND-Cell automatically discovers enterprise applications that are deployed on the collective.
 The WAS-ND-Cell also creates WAS-Traditional-App Kubernetes custom resources to represent those applications. Application 
@@ -15,6 +17,9 @@ into Application Navigator with the WAS-ND-Cell list view page in Application Na
 ### Import the WebSphere Application Server Network Deployment cell by using the WAS-ND-Cell list view page
 
   1. Open the WebSphere Application Server Network Deployment cell page and launch create dialog.
+
+     ![](https://github.com/IBM/appnav/blob/master/images/importcell.1.png)
+
   1. Enter details and create the cell.
      1. Under the General details tab, enter a name for the cell.
      1. Click Endpoints and enter your host and port details.
