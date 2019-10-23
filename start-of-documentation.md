@@ -6,12 +6,18 @@ IBM Application Navigator is designed to satisfy a need for application operator
 
 Using IBM Application Navigator, you can visually navigate to the respective components of the applications. Each component is a Kubernetes resource, such as a deployment or service resource, and has a Kind. IBM Application Navigator facilitates day 2 operations by providing action menu items by Kind. These menu items provide URLs and scriptable commands that enable you to navigate to, and operate, other tools in context for the currently selected component.
 
+## Visual Overview of IBM Application Navigator 
+
 ![overview](https://github.com/IBM/appnav/blob/master/images/appnav-screens.png)
 
-IBM Application is part of IBM Cloud Pak for Applications. 
+## Built on Open Source, Supported by IBM
+
+IBM Application Navigator is part of [IBM Cloud Pak for Applications(https://www.ibm.com/support/knowledgecenter/SSCSJL/welcome.html).  IBM Application Navigator is built from the [kAppNav open source project](https://github.com/kappnav).  The kAppNav technology is included in [Kabanero]((https://kabanero.io/)) application development technology.  IBM Cloud Pak for Applications is built from Kabanero.  
+
+IBM Cloud Pak for Applications, which includes IBM Application Navigator, is a supported project.  The Kabanero and kAppNav open source projects are community supported. 
 
 ## References 
 
-1. [kAppnav open source project](https://github.com/kappnav)
 1. [kAppNav project page](https://kappnav.io)
+1. [Kabanero project page](https://kabanero.io/)
 1. [IBM Cloud Pak for Applications](https://www.ibm.com/support/knowledgecenter/SSCSJL/welcome.html)
