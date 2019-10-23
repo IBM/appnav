@@ -20,19 +20,19 @@ into Application Navigator with the WAS-ND-Cell list view page in Application Na
 
      ![](https://github.com/IBM/appnav/blob/master/images/importcell.1.png)
 
-     ![](https://github.com/IBM/appnav/blob/master/images/importcell.2.png)
-
   1. Enter details and create the cell.
 
      1. Under the **General** details tab, enter a name for the cell.
 
-        ![](https://github.com/IBM/appnav/blob/master/images/importcell.3.png)
+        ![](https://github.com/IBM/appnav/blob/master/images/importcell.2.png)
 
      1. Click **Endpoints** and enter your host and port details.
 
-        ![](https://github.com/IBM/appnav/blob/master/images/importcell.4.png)
+        ![](https://github.com/IBM/appnav/blob/master/images/importcell.3.png)
 
      1. Click Credentials and enter a Kubernetes secret name, user name, and password to log in to your cell.
+
+         ![](https://github.com/IBM/appnav/blob/master/images/importcell.4.png)
 
      1. Click the **Create** button to create your credentials secret.
 
