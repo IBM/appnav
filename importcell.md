@@ -36,8 +36,6 @@ into Application Navigator with the WAS-ND-Cell list view page in Application Na
 
      1. Click the **Create** button to create your credentials secret.
 
-        ![](https://github.com/IBM/appnav/blob/master/images/importcell.5.png)
-
         **Attention:** You can create a new Kubernetes secret or choose an existing one. For a new one, the user name and 
         password you specify is stored as base 64 encoded values in the secret.
 
@@ -45,11 +43,11 @@ into Application Navigator with the WAS-ND-Cell list view page in Application Na
 
      1. Click cell name to see the detail view.
 
-        ![](https://github.com/IBM/appnav/blob/master/images/importcell.6.png)
+        ![](https://github.com/IBM/appnav/blob/master/images/importcell.5.png)
 
      1. Use the detail view to see cell details.
 
-        ![](https://github.com/IBM/appnav/blob/master/images/importcell.7.png)
+        ![](https://github.com/IBM/appnav/blob/master/images/importcell.6.png)
 
 
 ### Import the WebSphere Application Server Network Deployment by using the Kubernetes command-line tool
