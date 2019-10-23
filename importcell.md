@@ -58,6 +58,20 @@ into Application Navigator with the WAS-ND-Cell list view page in Application Na
     1. Interval is the controller polling interval for syncing cells with Kubernetes resources.
     1. Create the WebSphere Application Server Network Deployment cell.yaml file.
 
+       ```
+apiVersion: prism.io/v1beta1
+kind: WAS-ND-Cell
+metadata:
+  name: prism-testcell1
+  namespace: default
+spec:
+  console_url: https://prism-wasnd-dmgr.rtp.raleigh.ibm.com:9043/ibm/console
+  credentials: prism-testcell1-secret
+  host: prism-wasnd-dmgr.rtp.raleigh.ibm.com
+  interval: 30
+  soap_port: 8879
+       ```
+
     1. Create the resource with the command:
     
 1. Create the secret for the cell credentials.
