@@ -8,6 +8,6 @@ applications.
 
 ## References 
 
-[kAppnav open source project](https://github.com/kappnav)
-[kAppNav project page]((https://kappnav.io))
-[kabanero project page](https://kabanero.io/)
+1. [kAppnav open source project](https://github.com/kappnav)
+2. [kAppNav project page](https://kappnav.io)
+3. [kabanero project page](https://kabanero.io/)
