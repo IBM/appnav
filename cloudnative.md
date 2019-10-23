@@ -2,7 +2,8 @@
 
 IBM Application Navigator defines applications as a set of Kubernetes resources that work together to satisfy a particular 
 set of business requirements. Cloud native applications Cloud native applications are composed of distributed components. 
-In a cloud native architecture, each component follows the principles that are specified by 12factor.net. These principles 
+In a cloud native architecture, each component follows the principles that are specified by 
+[12factor.net](https://12factor.net/). These principles 
 specify the logical architecture of a cloud native application as shown in the following diagram:
 
 ![](https://github.com/IBM/appnav/blob/master/images/cloudnative.1.png)
@@ -23,9 +24,10 @@ components turn into various Kubernetes resources as the application is installe
 
 ![](https://github.com/IBM/appnav/blob/master/images/cloudnative.3.png)
  
-The diagram shows each component that is separately installed to Kubernetes. By following the 12 Factor principles, an owner 
-can independently install and operate each component. Each owner can choose a different installation technology, such as Helm 
-charts, Kubernetes operators, or even low-level Kubernetes configuration files. When an owner deploys components to Kubernetes, each component turns into one or more Kubernetes resources.
+The diagram shows each component that is separately installed to Kubernetes. By following the 
+[12 Factor principles](https://12factor.net/), a component owner 
+can independently install and operate each component. Each component owner can choose a different installation technology, such as Helm 
+charts, Kubernetes operators, or even low-level Kubernetes configuration files. When a component owner deploys components to Kubernetes, each component turns into one or more Kubernetes resources.
 In the following diagram, you can see a Deployment and Pod resource for each component. These resources provide structure and
 control over the software containers while the Service or Ingress resources provide network access. This set of components that are composed of resources defines the logical application boundary, for Application A. The logical application boundary uses an Application custom resource with Kubernetes.
 
