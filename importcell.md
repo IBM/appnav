@@ -105,8 +105,8 @@ into Application Navigator with the WAS-ND-Cell list view page in Application Na
     Use the following commands to see your cell and its secret in the yaml format:
 
     ```
-    kubectl get twas-cell prism-testcell -o yamlCopy
-    kubectl get twas-apps -o yamlCopy
+    kubectl get twas-cell prism-testcell -o yaml
+    kubectl get twas-apps -o yaml
     kubectl get secret prism-testcell1-secret -o yaml
     ```
 
