@@ -59,31 +59,56 @@ into Application Navigator with the WAS-ND-Cell list view page in Application Na
     1. Create the WebSphere Application Server Network Deployment cell.yaml file.
 
        ```
-apiVersion: prism.io/v1beta1
-kind: WAS-ND-Cell
-metadata:
-  name: prism-testcell1
-  namespace: default
-spec:
-  console_url: https://prism-wasnd-dmgr.rtp.raleigh.ibm.com:9043/ibm/console
-  credentials: prism-testcell1-secret
-  host: prism-wasnd-dmgr.rtp.raleigh.ibm.com
-  interval: 30
-  soap_port: 8879
+       apiVersion: prism.io/v1beta1
+       kind: WAS-ND-Cell
+       metadata:
+          name: prism-testcell1
+          namespace: default
+       spec:
+          console_url: https://prism-wasnd-dmgr.rtp.raleigh.ibm.com:9043/ibm/console
+          credentials: prism-testcell1-secret
+          host: prism-wasnd-dmgr.rtp.raleigh.ibm.com
+          interval: 30
+          soap_port: 8879
        ```
 
     1. Create the resource with the command:
+
+       ```
+       kubectl create -f cell.yaml
+       ```
     
 1. Create the secret for the cell credentials.
    1. The user name and password fields must be base 64 encoded.
    1. The secret must be in the same namespace as the corresponding cell.
    1. Create the secret.yaml file.
 
+      ```
+      apiVersion: v1
+      data:
+         password: dGVzdHVzZXJwd2Q=
+         username: dGVzdHVzZXI=
+      kind: Secret
+      metadata:
+         name: prism-testcell1-secret
+         namespace: default
+      ```
+
    1. Create the resource with the following command:
+
+      ```
+      kubectl create -f secret.yaml
+      ```
    
 1.	Inspect twas-apps resources.
 
     Use the following commands to see your cell and its secret in the yaml format:
+
+    ```
+    kubectl get twas-cell prism-testcell -o yamlCopy
+    kubectl get twas-apps -o yamlCopy
+    kubectl get secret prism-testcell1-secret -o yaml
+    ```
 
 ## Results
 
