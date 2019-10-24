@@ -10,4 +10,4 @@ IBM Cloud Pak for Applications, which includes IBM Application Navigator, is sup
 
 1. [kAppNav project page](https://kappnav.io)
 1. [Kabanero project page](https://kabanero.io/)
-1. [IBM Cloud Pak for Applications](https://www.ibm.com/support/knowledgecenter/SSCSJL/welcome.html)
+1. [IBM Cloud Pak for Applications](https://www.ibm.com/support/knowledgecenter/SSCSJL)
