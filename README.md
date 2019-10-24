@@ -4,7 +4,9 @@ IBM Application Navigator is a tool that extends the Kubernetes® console to pro
 
 ## Documentation
 
-This repository is the primary source of documentation IBM Application Navigator. Installation documentation is available in Knowledge Center (link TBD).
+This repository is the primary source of documentation IBM Application Navigator. The actual documentation starts [here](https://github.com/IBM/appnav/blob/master/start-of-documentation.md). 
+
+IBM Application Navigator is installed as part of IBM Cloud Pak for Applications.  The installation documentation is available in Knowledge Center (link TBD).
 
 ## Documentation Strategy
 
