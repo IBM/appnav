@@ -1,1 +1,4 @@
-theme: jekyll-theme-architect
+theme: jekyll-theme-cayman
+title: IBM Application Navigator
+description: The official documentation for IBM Application Navigator, part of the IBM Cloud Pak for Applications
+show_downloads: false
