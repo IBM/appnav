@@ -18,21 +18,21 @@ into Application Navigator with the WAS-ND-Cell list view page in Application Na
 
   1. Open the WebSphere Application Server Network Deployment cell page and launch create dialog.
 
-     ![](https://github.com/IBM/appnav/blob/master/images/importcell.1.png)
+     ![](images/importcell.1.png?raw=true)
 
   1. Enter details and create the cell.
 
      1. Under the **General** details tab, enter a name for the cell.
 
-        ![](https://github.com/IBM/appnav/blob/master/images/importcell.2.png)
+        ![](images/importcell.2.png?raw=true)
 
      1. Click **Endpoints** and enter your host and port details.
 
-        ![](https://github.com/IBM/appnav/blob/master/images/importcell.3.png)
+        ![](images/importcell.3.png?raw=true)
 
      1. Click Credentials and enter a Kubernetes secret name, user name, and password to log in to your cell.
 
-         ![](https://github.com/IBM/appnav/blob/master/images/importcell.4.png)
+         ![](images/importcell.4.png?raw=true)
 
      1. Click the **Create** button to create your credentials secret.
 
@@ -43,11 +43,11 @@ into Application Navigator with the WAS-ND-Cell list view page in Application Na
 
      1. Click cell name to see the detail view.
 
-        ![](https://github.com/IBM/appnav/blob/master/images/importcell.5.png)
+        ![](images/importcell.5.png?raw=true)
 
      1. Use the detail view to see cell details.
 
-        ![](https://github.com/IBM/appnav/blob/master/images/importcell.6.png)
+        ![](images/importcell.6.png?raw=true)
 
 
 ### Import the WebSphere Application Server Network Deployment by using the Kubernetes command-line tool

@@ -6,14 +6,14 @@ In a cloud native architecture, each component follows the principles that are s
 [12factor.net](https://12factor.net/). These principles 
 specify the logical architecture of a cloud native application as shown in the following diagram:
 
-![](https://github.com/IBM/appnav/blob/master/images/cloudnative.1.png)
+![](images/cloudnative.1.png?raw=true)
  
 In the diagram, you can see the architecture of a simple cloud native application that is composed of a user-facing component,
 Web App W. This component calls the Micro Service 1 and Micro Service 2 components. Each component provides a discrete 
 function. The following diagram shows the components as Application A. The components work together and satisfy an overall 
 business need.
 
-![](https://github.com/IBM/appnav/blob/master/images/cloudnative.2.png)
+![](images/cloudnative.2.png?raw=true)
  
 ## Kubernetes applications
 
@@ -22,7 +22,7 @@ following diagram, it is implemented in Java. The architecture uses [Open Libert
 cloud platform, such as Red Hat Openshift. When the architecture is deployed to Kubernetes, the logical
 components turn into various Kubernetes resources as the application is installed.
 
-![](https://github.com/IBM/appnav/blob/master/images/cloudnative.3.png)
+![](images/cloudnative.3.png?raw=true)
  
 The diagram shows each component that is separately installed to Kubernetes. By following the 
 [12 Factor principles](https://12factor.net/), a component owner 
@@ -32,7 +32,7 @@ In the following diagram, you can see a Deployment and Pod resource for each com
 control over the software containers while the Service or Ingress resources provide network access. This set of components that are composed of resources defines the logical application boundary, for Application A. The logical application boundary uses an Application custom resource with Kubernetes.
 
 
-![](https://github.com/IBM/appnav/blob/master/images/cloudnative.4.png)
+![](images/cloudnative.4.png?raw=true)
  
 ## Application custom resource
 
@@ -57,7 +57,7 @@ this application. The componentKinds attribute defines an array of kinds and onl
 components of this application.
 
 
-![](https://github.com/IBM/appnav/blob/master/images/cloudnative.5.png)
+![](images/cloudnative.5.png?raw=true)
  
 ### Directed membership
 
@@ -67,7 +67,7 @@ any component that has a label that is named app and a label value that matches 
 componentKinds attribute defines an array of kinds and only the specified kinds are selected as components of this 
 application.
 
-![](https://github.com/IBM/appnav/blob/master/images/cloudnative.6.png)
+![](images/cloudnative.6.png?raw=true)
  
 ## Applications as components
 
@@ -77,4 +77,4 @@ application contains a component that is itself an application, the IBM Applicat
 This multi-level navigation allows you to drill into the top-level application, and then into its component list. For any 
 component that is an application, you can then drill into it to see its component list.
 
-![](https://github.com/IBM/appnav/blob/master/images/cloudnative.7.png)
+![](images/cloudnative.7.png?raw=true)

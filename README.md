@@ -2,9 +2,13 @@
 
 IBM Application Navigator is a tool that extends the Kubernetes® console to provide display, inspection, understanding and expose day 2 operations of applications comprised of Kubernetes resources and existing middleware, such as WebSphere Application Server. AppNav extends the open source [Kubernetes Application Navigator (kAppNav)](https://kappnav.io) by providing integration to WebSphere ND Cells and Liberty Collectives, enabling visibility to existing and containerized applications.
 
-## Documentation
+## [Documentation](https://ibm.github.io/appnav/)
 
-This repository is the primary source of documentation IBM Application Navigator. The actual documentation starts [here](https://github.com/IBM/appnav/blob/master/start-of-documentation.md). IBM Application Navigator is installed as part of IBM Cloud Pak for Applications.  The installation documentation is available in Knowledge Center (link TBD).
+This repository is the primary source of documentation IBM Application Navigator. The actual documentation starts [here: https://ibm.github.io/appnav/](https://ibm.github.io/appnav/). IBM Application Navigator is installed as part of IBM Cloud Pak for Applications.  The installation documentation is available in [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSCSJL/install-icpa.html).
+
+## Documentation Issues
+
+If you find any issues with the documentation, please [open an issue](https://github.com/IBM/appnav/issues/new). Functional issues should be reported using IBM's support ticket process.
 
 ## Documentation Strategy
 
@@ -23,7 +27,7 @@ Before contributing documentation for AppNav, consider whether the documentation
 
 ## Documentation Structure
 - IBM Application Navigator
-  - Installation documentation: Knowledge Center (link TBD)
+  - Installation documentation: [Knowledge Center](https://www.ibm.com/support/knowledgecenter/SSCSJL/install-icpa.html)
   - Usage documentation: https://github.com/IBM/appnav/blob/master/start-of-documentation.md
 - Kabanero
   - kabanero.io guide for Application Navigator + Kabanero Collections ([appsody](https://appsody.dev) + [kappnav](https://kappnav.io))
