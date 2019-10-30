@@ -1,4 +1,4 @@
-# Import WAS ND Cells
+# Import WebSphere Application Server Network Deployment cells
 
 Importing a WebSphere® Application Server Network Deployment cell creates a WAS-ND-Cell Kubernetes custom resource to 
 represent the collective. The WAS-ND-Cell automatically discovers enterprise applications that are deployed on the collective.
@@ -10,13 +10,13 @@ synchronized with the cell.
 
 You can import a WebSphere Application Server Network Deployment cell into an IBM Application Navigator cell to establish 
 visibility and access to the Network Deployment cell. A WebSphere Application Server Network Deployment cell can be imported 
-into Application Navigator with the WAS-ND-Cell list view page in Application Navigator or the Kubernetes kubectl command.
+into Application Navigator with the WAS-ND-Cell list view page in Application Navigator or the Kubernetes **kubectl** command.
 
 ## Procedure
 
 ### Import the WebSphere Application Server Network Deployment cell by using the WAS-ND-Cell list view page
 
-  1. Open the WebSphere Application Server Network Deployment cell page and launch create dialog.
+  1. Open the WebSphere Application Server Network Deployment cell page and launch **create dialog**.
 
      ![](images/importcell.1.png?raw=true)
 
@@ -36,7 +36,7 @@ into Application Navigator with the WAS-ND-Cell list view page in Application Na
 
      1. Click the **Create** button to create your credentials secret.
 
-        **Attention:** You can create a new Kubernetes secret or choose an existing one. For a new one, the user name and 
+        > **Attention:** You can create a new Kubernetes secret or choose an existing one. For a new one, the user name and 
         password you specify is stored as base 64 encoded values in the secret.
 
   1. Optional: Inspect the cell.
@@ -72,7 +72,7 @@ into Application Navigator with the WAS-ND-Cell list view page in Application Na
           soap_port: 8879
        ```
 
-    1. Create the resource with the command:
+    1. Create the resource with the following command:
 
        ```
        kubectl create -f cell.yaml
