@@ -30,7 +30,7 @@ into Application Navigator with the WAS-ND-Cell list view page in Application Na
 
         ![](images/importcell.3.png?raw=true)
 
-     1. Click Credentials and enter a Kubernetes secret name, user name, and password to log in to your cell.
+     1. Click **Credentials** and enter a Kubernetes secret name, user name, and password to log in to your cell.
 
          ![](images/importcell.4.png?raw=true)
 
@@ -50,7 +50,7 @@ into Application Navigator with the WAS-ND-Cell list view page in Application Na
         ![](images/importcell.6.png?raw=true)
 
 
-### Import the WebSphere Application Server Network Deployment by using the Kubernetes command-line tool
+### Import the WebSphere Application Server Network Deployment cell by using the Kubernetes command-line tool
 
 1.	Create the WebSphere Application Server Network Deployment cell resource.
     1. All fields that are shown are required.
