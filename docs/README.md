@@ -7,6 +7,7 @@ WebSphere Application Server Network Deployment cells and Liberty collectives, w
 
 # Table of Contents
 
+1. [Release Notes](releasenotes.md)
 1. [Overview](overview.md)
 1. [Built from open source](opensource.md)
 1. [Installation](install.md)
