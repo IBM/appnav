@@ -20,3 +20,6 @@ WebSphere Application Server Network Deployment cells and Liberty collectives, w
 1. [Importing Liberty collectives](importcoll.md)
 1. [Adding a WebSphere Application Server Network Deployment application or Liberty application to a cloud application](addtwaslib.md)
 1. [Implementing your own legacy resources](https://github.com/kappnav/samples/tree/master/legacyapp)
+
+
+If you encouter any unexpected behaviours or errors, see the [Known Issues](known-issues.md) before raising a support ticket.
