@@ -1,9 +1,8 @@
 # Import WebSphere Application Server Network Deployment cells
 
-Importing an existing WebSphere® Application Server Network Deployment cell creates a WAS-ND-Cell Kubernetes custom resource to 
-represent the cell. The Application Navigator automatically discovers enterprise applications that are deployed on the cell and creates WAS-Traditional-App Kubernetes custom resources to represent those applications. Application 
-Navigator periodically polls the cell to keep the state of the WAS-ND-Cell resources and WAS-Traditional-App resources 
-synchronized with the cell.
+Importing an existing WebSphere® Application Server Network Deployment cell creates a WAS-ND-Cell Kubernetes custom resource to represent the cell.
+Application Navigator automatically discovers enterprise applications that are deployed on the cell and creates WAS-Traditional-App Kubernetes custom resources to represent those applications.
+Application Navigator periodically polls the cell to keep the state of the WAS-ND-Cell resources and WAS-Traditional-App resources synchronized with the cell.
 
 ## About this task
 
