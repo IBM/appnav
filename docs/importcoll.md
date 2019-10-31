@@ -16,21 +16,21 @@ into Application Navigator with the 'Liberty Collectives' page in Application Na
 
   1. Open the WebSphere Liberty collective page and launch create dialog.
 
-     ![](images/importcell.1.png?raw=true)
+     ![](images/importcollective.1.png?raw=true)
 
   1. Enter details and create the collective
 
      1. Under the **General** details tab, enter a name for the collective.
 
-        ![](images/importcell.2.png?raw=true)
+        ![](images/importcollective.2.png?raw=true)
 
      1. Click **Endpoints** and enter your host name, and adjust any port values (defaults are provided).
 
-        ![](images/importcell.3.png?raw=true)
+        ![](images/importcollective.3.png?raw=true)
 
      1. Click Credentials and enter a Kubernetes secret name, user name, and password to log in to your collective.
 
-         ![](images/importcell.4.png?raw=true)
+         ![](images/importcollective.4.png?raw=true)
 
      1. Click the **Create** button to create your credentials secret.
 
@@ -41,11 +41,11 @@ into Application Navigator with the 'Liberty Collectives' page in Application Na
 
      1. Click collective name to see the detail view.
 
-        ![](images/importcell.5.png?raw=true)
+        ![](images/importcollective.5.png?raw=true)
 
      1. Use the detail view to see collective details.
 
-        ![](images/importcell.6.png?raw=true)
+        ![](images/importcollective.6.png?raw=true)
 
 
 ### Import the WebSphere Liberty collective by using the Kubernetes command-line tool
@@ -76,7 +76,7 @@ into Application Navigator with the 'Liberty Collectives' page in Application Na
     
 1. Create the secret for the collective credentials.
    1. The user name and password fields must be base 64 encoded.
-   1. The secret must be in the same namespace as the corresponding cell.
+   1. The secret must be in the same namespace as the corresponding collective.
    1. Create the secret.yaml file.
 
       ```
@@ -98,12 +98,12 @@ into Application Navigator with the 'Liberty Collectives' page in Application Na
    
 1.	Inspect twas-apps resources.
 
-    Use the following commands to see your cell and its secret in the yaml format:
+    Use the following commands to see your collective and its secret in the yaml format:
 
     ```
     kubectl get liberty-collective existing-collective -o yaml
     kubectl get liberty-apps -o yaml
-    kubectl get secret prism-testcell1-secret -o yaml
+    kubectl get secret existing-collective-secret -o yaml
     ```
 
 ## Results
