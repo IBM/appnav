@@ -23,4 +23,4 @@ WebSphere Application Server Network Deployment cells and Liberty collectives, w
 
 
 
-If you encounter any unexpected behaviours or errors, see the [Known Issues](known-issues.md) before raising a support ticket.
+If you encounter any unexpected behaviors or errors, see the [Known Issues](known-issues.md) before raising a support ticket.
