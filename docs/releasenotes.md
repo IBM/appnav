@@ -2,4 +2,4 @@
 
 ## IBM Application Navigator 2.0.0 
 
-Pending ...
+We recommend you review [Known Issues](known-issues.md) before using this release. 
