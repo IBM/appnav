@@ -34,3 +34,13 @@ Before contributing documentation for AppNav, consider whether the documentation
 - Kubernetes Application Navigator
   - See kappnav.io and https://github.com/kappnav/README
 
+## Notes for Creating Documentation
+
+The goal of the UI is to be as intuitive as possible. Similarly, the goal of the documentation is to be as instructive as possible, without being overly burdonsome. The documentation should assume minimal knowledge on the part of the user, while still being quick to follow for experienced users (i.e. next steps are obvious, clearly indiciated, and an experienced user can skip ahead quickly). To that end, augment the documentation with screenshots, command examples and code (YAML) examples.
+
+### Guidance for creating screenshots
+
+1. Screenshots should include as much of the UI as is necessary for context. Unless important, the browser URL bar does not need to be included.
+  * Annotated screenshots should use the "Bradley Hand" font (available by default on MacOS) and dark blue shape outlines.
+1. Small, focused screenshots are encouraged when filling in forms
+
