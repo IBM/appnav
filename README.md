@@ -13,7 +13,7 @@ If you find any issues with the documentation, please [open an issue](https://gi
 ## Documentation Strategy
 
 Because IBM Application Navigator (AppNav) extends Kubernetes Application Navigator (kAppNav),
-a sound documentation strategy is required to ensure minimial duplication and to reuse existing documentation and to promote the kAppNav project.
+a sound documentation strategy is required to ensure minimal duplication and to reuse existing documentation and to promote the kAppNav project.
 Before contributing documentation for AppNav, consider whether the documentation is better provided in kAppNav.
 
 ### Goals:
@@ -36,7 +36,7 @@ Before contributing documentation for AppNav, consider whether the documentation
 
 ## Notes for Creating Documentation
 
-The goal of the UI is to be as intuitive as possible. Similarly, the goal of the documentation is to be as instructive as possible, without being overly burdonsome. The documentation should assume minimal knowledge on the part of the user, while still being quick to follow for experienced users (i.e. next steps are obvious, clearly indiciated, and an experienced user can skip ahead quickly). To that end, augment the documentation with screenshots, command examples and code (YAML) examples.
+The goal of the UI is to be as intuitive as possible. Similarly, the goal of the documentation is to be as instructive as possible, without being overly burdensome. The documentation should assume minimal knowledge on the part of the user, while still being quick to follow for experienced users (i.e. next steps are obvious, clearly indicated, and an experienced user can skip ahead quickly). To that end, augment the documentation with screenshots, command examples and code (YAML) examples.
 
 ### Guidance for creating screenshots
 
