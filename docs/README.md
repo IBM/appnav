@@ -9,11 +9,12 @@ WebSphere Application Server Network Deployment cells and Liberty collectives, w
 
 1. [Release Notes](releasenotes.md)
 1. [Overview](overview.md)
+1. [System Requirements](requirements.md)
 1. [Built from open source](opensource.md)
 1. [Installing Application Navigator](install.md)
 1. [Installing a sample application](https://github.com/kappnav/README#install-sample-application)
 1. [Creating your first application](https://github.com/kappnav/README/blob/master/how-to-create-applications.md)
-1. [Performing actions with Application Navigator](https://github.com/kappnav/README/blob/master/actions.md)
+1. [Performing actions with Application Navigator](actions.md)
 1. [Cloud native applications](cloudnative.md)
 1. [Application transformation scenario](https://youtu.be/h833ZN8KQy0)
 1. [Importing WebSphere Application Server Network Deployment cells](importcell.md)
