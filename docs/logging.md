@@ -23,7 +23,8 @@ using console path:
 
 **Home > Explorer > kappnav > instances > kappnav > yaml**
 
-![]()
+![loglevels](https://github.com/IBM/appnav/blob/master/docs/images/loglevels.png)
 
 Figure 1. Logging section of kappnav resource
 
+To change the logging level for any Application Navigator container or containers,  just edit the current log level to the desired log level and click the "save" button. 
