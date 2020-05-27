@@ -12,16 +12,17 @@ WebSphere Application Server Network Deployment cells and Liberty collectives, w
 1. [System Requirements](requirements.md)
 1. [Built from open source](opensource.md)
 1. [Installing Application Navigator](install.md)
-1. [Installing a sample application ![External link icon](images/icons/launch-glyph.svg "External link icon")](https://github.com/kappnav/README#install-sample-application)
-1. [Creating your first application ![External link icon](images/icons/launch-glyph.svg "External link icon")](https://github.com/kappnav/README/blob/master/how-to-create-applications.md)
+1. [Installing a sample application](https://github.com/kappnav/README#install-sample-application)
+1. [Creating your first application](https://github.com/kappnav/README/blob/master/how-to-create-applications.md)
 1. [Performing actions with Application Navigator](actions.md)
 1. [Cloud native applications](cloudnative.md)
-1. [Application transformation scenario ![External link icon](images/icons/launch-glyph.svg "External link icon")](https://youtu.be/h833ZN8KQy0)
+1. [Application transformation scenario](https://youtu.be/h833ZN8KQy0)
 1. [Importing WebSphere Application Server Network Deployment cells](importcell.md)
 1. [Importing Liberty collectives](importcoll.md)
 1. [Adding a WebSphere Application Server Network Deployment application or Liberty application to a cloud application](addtwaslib.md)
-1. [Implementing your own legacy resources ![External link icon](images/icons/launch-glyph.svg "External link icon")](https://github.com/kappnav/samples/tree/master/legacyapp)
-
+1. [Implementing your own legacy resources](https://github.com/kappnav/samples/tree/master/legacyapp)
+1. [Inventory Action](https://github.com/IBM/appnav/blob/master/docs/inventory.md)
+1. [Application Navigator Logging](https://github.com/IBM/appnav/blob/master/docs/logging.md)
 
 
 If you encounter any unexpected behaviors or errors, see the [Known Issues](known-issues.md) before raising a support ticket.
