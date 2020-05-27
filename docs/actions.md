@@ -8,18 +8,13 @@ lastupdated: "2020-04-01"
 
 <!-- Update the lastupdated value each time that you change the file. -->
 
-{:new_window: target="_blank"}
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
+
 
 # Performing Actions with Application Navigator
-{: #actions}
+
 
 In-context actions are available for the components of an application through action menus. There is a set of base actions that are inherited through the {k}AppNav open source project. Additional actions are provided by IBM Application Navigator. You can also provide your own custom actions.
-{: shortdesc}
+
 
 - [Base actions ![External link icon](images/icons/launch-glyph.svg "External link icon")](https://github.com/kappnav/README/blob/master/actions.md)
 - Actions provided by IBM Application Navigator
