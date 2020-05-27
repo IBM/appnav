@@ -2,7 +2,7 @@
 
 IBM Application Navigator is a tool that extends the Kubernetes&reg; console to provide the display, inspection, understanding, and
 navigation of applications composed of Kubernetes resources and existing middleware, such as WebSphere Application Server.
-Application Navigator extends the open source [Kubernetes Application Navigator (kAppNav) ![External link icon](images/icons/launch-glyph.svg "External link icon")](http://kappnav.io) by providing integration to
+Application Navigator extends the open source [Kubernetes Application Navigator (kAppNav)](http://kappnav.io) by providing integration to
 WebSphere Application Server Network Deployment cells and Liberty collectives, which enables visibility to existing and containerized applications.
 
 # Table of Contents
