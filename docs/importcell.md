@@ -6,45 +6,57 @@ Application Navigator periodically polls the cell to keep the state of the WAS-N
 
 ## About this task
 
-You can import an existing WebSphere Application Server Network Deployment cell into IBM Application Navigator to establish 
-visibility and access to the Network Deployment cell. A cell can be imported into Application Navigator with the 'WAS ND Cells'  page in Application Navigator or the Kubernetes **kubectl** command.
+You can import an existing WebSphere Application Server Network Deployment cell into IBM Application Navigator to establish
+visibility and access to the Network Deployment cell. A cell can be imported into Application Navigator with the "WAS ND Cells" page in Application Navigator or the Kubernetes **kubectl** command.
 
 ## Procedure
 
-### Import the WebSphere Application Server Network Deployment cell by using the 'WAS ND Cells' page
+### Import the WebSphere Application Server Network Deployment cell by using the "WAS ND Cells" page
 
   1. Open the WebSphere Application Server Network Deployment cell page and launch **create dialog**.
 
-     ![](images/importcell.1.png?raw=true)
+     Click the `WAS ND Cells` menu item to open the cell view page.
+
+     ![Menu item to click on the cell view page](images/importcell.1.png?raw=true)
 
   1. Enter details and create the cell.
 
-     1. Under the **General** details tab, enter a name for the cell.
+     1. Under the **General** details tab, enter a name for the cell in the `Name` field.
 
-        ![](images/importcell.2.png?raw=true)
+        This name is unique in the specified namespace on your Kubernetes cluster. Then, click `Create WAS ND Cell` to launch the new cell dialog.
+
+        ![Page to create the WAS ND Cell](images/importcell.2.png?raw=true)
 
      1. Click **Endpoints** and enter your host name, and adjust any port values (defaults are provided).
 
-        ![](images/importcell.3.png?raw=true)
+        Adjust the port number in the console URL to match your cell configuration. Do the same for your SOAP port.
 
-     1. Click **Credentials** and enter a Kubernetes secret name, user name, and password to log in to your cell.
+        ![Page to specify endpoints](images/importcell.3.png?raw=true)
 
-         ![](images/importcell.4.png?raw=true)
+     1. Click **Credentials** and enter a Kubernetes secret name, user name, and password to log in to your cell so that application navigator can track cell status.
+
+        - Click **Credentials**.
+        - In the **Credentials** field, select whether you need to create a secret or whether you already have a secret.
+        - For the **Credential name** field, enter the Kubernetes secret name.
+        - Enter your username and password so that you can log in to your cell.  
+        - Click **Create** to create your credentials secret.
+
+         ![Page to set up your credentials](images/importcell.4.png?raw=true)
 
      1. Click the **Create** button to create your credentials secret.
 
-        > **Attention:** You can create a new Kubernetes secret or choose an existing one. For a new one, the user name and 
+        **Attention:** You can create a new Kubernetes secret or choose an existing one. For a new one, the user name and
         password you specify is stored as base 64 encoded values in the secret.
 
   1. Optional: Inspect the cell.
 
      1. Click cell name to see the detail view.
 
-        ![](images/importcell.5.png?raw=true)
+        ![Page to click cell name](images/importcell.5.png?raw=true)
 
      1. Use the detail view to see cell details.
 
-        ![](images/importcell.6.png?raw=true)
+        ![Page with detail view of the cell](images/importcell.6.png?raw=true)
 
 
 ### Import the WebSphere Application Server Network Deployment cell by using the Kubernetes command-line tool
@@ -53,10 +65,10 @@ visibility and access to the Network Deployment cell. A cell can be imported int
     1. All fields that are shown are required.
     1. Credentials are a Kubernetes secret in the same namespace.
     1. Interval is the controller polling interval for syncing cells with Kubernetes resources.
-    1. Create the cell.yaml file:
+    1. Create the `cell.yaml` file:
 
        ```
-       apiVersion: prism.io/v1beta1
+       apiVersion: kappnav.io/v1beta1
        kind: WAS-ND-Cell
        metadata:
           name: prism-testcell1
@@ -74,11 +86,11 @@ visibility and access to the Network Deployment cell. A cell can be imported int
        ```
        kubectl create -f cell.yaml
        ```
-    
+
 1. Create the secret for the cell credentials.
    1. The user name and password fields must be base 64 encoded.
    1. The secret must be in the same namespace as the corresponding cell.
-   1. Create the secret.yaml file.
+   1. Create the `secret.yaml` file.
 
       ```
       apiVersion: v1
@@ -96,19 +108,18 @@ visibility and access to the Network Deployment cell. A cell can be imported int
       ```
       kubectl create -f secret.yaml
       ```
-   
+
 1.	Inspect twas-apps resources.
 
-    Use the following commands to see your cell and its secret in the yaml format:
+    Use the following commands to see your cell and its secret in the `yaml` format:
 
     ```
-    kubectl get twas-cell prism-testcell -o yaml
+    kubectl get twas-cell prism-testcell1 -o yaml
     kubectl get twas-apps -o yaml
     kubectl get secret prism-testcell1-secret -o yaml
     ```
 
 ## Results
 
-You get a WAS-ND-Cell Kubernetes resource that represents your WebSphere Application Server Network Deployment cell and 
+You get a WAS-ND-Cell Kubernetes resource that represents your WebSphere Application Server Network Deployment cell and
 one WAS-Traditional-App Kubernetes resource for each enterprise application deployed to that cell.
-
