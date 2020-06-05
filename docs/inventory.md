@@ -1,38 +1,40 @@
-# Inventory Action
+# Inventory action
 
-The Application Navigator inventory action provides an easy way to generate a report listing: 
+The Application Navigator inventory action generates a report that provides a way to obtain an overall view of Application Navigator, its operation status, and the resources it is managing. 
 
-1. All Application Navigator Kubernetes resources
-1. All Application Navigator Pods and Images 
-1. All Applications and components 
-1. All WAS-ND-Cell and WAS-Traditional-App resources
-1. All Liberty-Collective and Liberty-App resources 
+The report contains the following items: 
 
-This report provides an easy way to obtain an overall view of Application Navigator, it's operational status, and the resources
-it is managing. 
+* Application Navigator Kubernetes resources
+* Application Navigator Pods and Images 
+* Applications and components 
+* WAS-ND-Cell and WAS-Traditional-App resources
+* Liberty-Collective and Liberty-App resources 
+ 
+ ## About this task
 
-To submit the Inventory actionn, simply click the "Inventory" in the Command Action table or "Run Inventory" button: 
+You can use the **Command Actions** page to launch the Application Navigator inventory action. There are two ways to launch the inventory action on the **Command Actions** page.
 
-![inventory](https://github.com/IBM/appnav/blob/master/docs/images/inventory.png)
 
-Figure 1. Launch inventory action from Command Actions page 
+The following example shows how to launch the inventory action: 
+![Launch inventory action from Command Actions page](https://github.com/IBM/appnav/blob/master/docs/images/inventory.png)
 
-There are two ways to launch the inventory action: 
+## Procedure
 
-1. The first time you open the "Command Actions" page
+### Launch the inventory action from within the **Command Actions** table
 
-   There is a single entry in the table that states: 
+1. Open the **Command Actions** page.
+2. Click **Inventory** in the **Command Actions** table.
 
-   "No actions have been submitted yet. Want to run the __Inventory__ action?"  
+   When you first open the **Command Actions** page, there is a single entry in the **Command Actions** table that includes the **Inventory** link that you click to launch the inventory action: 
 
-   If you click on the highlighted word, "Inventory", the inventory action will be submitted. 
+### Launch the inventory action with the Run Inventory button
 
-2. Any time you open the "Command Actions" page
+1. Open the **Command Actions** page.
+2. Click **Run Inventory**.
 
-   Just click the "Run Inventory" button, located in the upper right hand portion of the page, to submit the inventory action.
-   
+## Results
 
-Example of Inventory action output: 
+The following example shows the output of the inventory action: 
 
 ```
 Begin IBM Application Navigator inventory ...
