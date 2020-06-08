@@ -12,11 +12,8 @@ The report contains the following items:
  
  ## About this task
 
-You can use the **Command Actions** page to launch the Application Navigator inventory action. There are two ways to launch the inventory action on the **Command Actions** page.
-
-
-The following example shows how to launch the inventory action: 
-![Launch inventory action from Command Actions page](https://github.com/IBM/appnav/blob/master/docs/images/inventory.png)
+You can use the **Command Actions** page to launch the Application Navigator inventory action. On the **Command Actions** page, you can launch the inventory action from within the **Command Actions** table
+or launch the action with the **Run Inventory** button.
 
 ## Procedure
 
@@ -25,12 +22,16 @@ The following example shows how to launch the inventory action:
 1. Open the **Command Actions** page.
 2. Click **Inventory** in the **Command Actions** table.
 
-   When you first open the **Command Actions** page, there is a single entry in the **Command Actions** table that includes the **Inventory** link that you click to launch the inventory action: 
+   When you first open the **Command Actions** page, a single entry is in the **Command Actions** table that includes the **Inventory** link that you click to launch the inventory action: 
 
 ### Launch the inventory action with the Run Inventory button
 
 1. Open the **Command Actions** page.
 2. Click **Run Inventory**.
+
+
+The following example shows how to launch the inventory action: 
+![Launch inventory action from Command Actions page](https://github.com/IBM/appnav/blob/master/docs/images/inventory.png)
 
 ## Results
 

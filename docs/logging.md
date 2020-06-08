@@ -1,38 +1,32 @@
 # Application Navigator Logging
 
-All Application Navigator containers generate logs. The most common purpose for this data is to aid problem determination by
-the IBM Support team. 
+Application Navigator supports a hierarchical
+log level scheme, where each successive log level includes a lower log level. The data that is stored in logs helps to determine problems within applications.
 
-Logging is supported for each of the Application Navigator container types.  Application Navigator supports a hierarchial
-log level scheme, where each successive log level includes lower log level.  The following log levels are supported: 
+Logging is supported for each of the Application Navigator container types. The following log levels are supported: 
 
-1. none - means turn off logging
-1. error - means record only error messages 
-1. warning - means record only warning and error messages 
-1. info - means record only info, warning, and error messages 
-1. debug - means record only debug, info, warning, and error messages
-1. entry - means record only entry/exit, debug, info, warning, and error messages 
-1. all - means records all message types 
+|Log level|Description|
+|---|----------|
+| `none` | Turn off logging | 
+| `error` | Record only `error` messages | 
+| `warning` | Record only `warning` and `error` messages | 
+| `info` | Record only `info`, `warning`, and `error` messages  |
+| `debug` | Record only `debug`, `info`, `warning`, and `error` messages
+| `entry` | Record only `entry` and `exit`, `debug`, `info`, `warning`, and error messages 
+| `all` | Records all message types
 
-**Note:** default log level is:  info
+The default log level is `info`.
 
-# How to set logging levels 
+## Setting log levels
 
-Log levels are set by editing the kappnav instance through the Openshift Administrator console.  Find the kappnav instance, 
-using console path: 
+Log levels are set by editing the kappnav instance through the OpenShift Administrator console. You can use the **Home > Explorer > kappnav > instances > kappnav > yaml** console path to find the kappnav instance that is used to edit log levels as shown in the following example: 
 
-**Home > Explorer > kappnav > instances > kappnav > yaml**
+![Logging section of kappnav resource](https://github.com/IBM/appnav/blob/master/docs/images/loglevels.png)
 
-![loglevels](https://github.com/IBM/appnav/blob/master/docs/images/loglevels.png)
 
-Figure 1. Logging section of kappnav resource
-
-To change the logging level for any Application Navigator container or containers,  just edit the current log level to the desired log level and click the "save" button. 
-
-**Sample Output**
+Within the kappnav instance, you can change the logging level for any Application Navigator container. The following example shows the output after you change the log level: 
 
 ```
-
 Launching defaultServer (Open Liberty 19.0.0.12/wlp-1.0.35.cl191220191120-0300) on IBM J9 VM, version 8.0.5.41 - pxa6480sr5fp41-20190919_01(SR5 FP41) (en_US)
 [AUDIT   ] CWWKE0001I: The server defaultServer has been launched.
 [AUDIT   ] CWWKG0093A: Processing configuration drop-ins resource: /opt/ol/wlp/usr/servers/defaultServer/configDropins/defaults/keystore.xml
@@ -54,26 +48,22 @@ Launching defaultServer (Open Liberty 19.0.0.12/wlp-1.0.35.cl191220191120-0300) 
 [05/26/20 19:40:52:689 GMT] 155 com.ibm.kappnav.logging.Logger setLogLevel [INFO] Logging level is now DEBUG
 ```
 
-# Finding Application Navigator Logs 
+## Finding Application Navigator Logs 
 
-Containers generate logs.  Containers are found in pods.  Application Navigator has the following pods with the following containers. 
+Containers generate logs and are found in pods. The following example specifies the Application Navigator pods along with their corresponding containers:
 
 |Pod|Containers|
 |---|----------|
-| controller | controller, apis | 
-| operator | operator | 
-| ui | ui, apis | 
-| was-controller | was-controller |
+| `controller` | `controller`, `apis` | 
+| `operator` | `operator` | 
+| `ui` | `ui`, `apis` | 
+| `was-controller` | `was-controller` |
 
-For example, if you modify the logging level for the "apis" container, it affects both container instances,  one in the controller pod, another in the ui pod. 
+If you modify the logging level for any container, the change affects all of the container instances, including each pod that the container exists in.
 
-To access a container's log, use the Openshift Administrator console, using console path: 
+You can use the **Workloads > Pods > pod-name > logs > container-name** console path in the OpenShift Administrator console to access a container's log. The following example shows how to access an Application Navigator container log: 
 
-**Workloads > Pods > pod-name > logs > container-name **
+![Application Navigator container log](https://github.com/IBM/appnav/blob/master/docs/images/logs.png)
 
-For example: 
 
-![loglevels](https://github.com/IBM/appnav/blob/master/docs/images/logs.png)
-
-Figure 2. Application Navigator container log
 
