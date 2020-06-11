@@ -21,7 +21,7 @@ You can make a twas-app Kubernetes resource a component of a Kubernetes applicat
     kubectl get application <application-name> -n <application-namespace> -o yaml
     ```
 
-The target application can specify either a match label, with an autonomous membership, or a match expression, with a directed membership, for its label selector. For more information, see [Cloud native applications on Kubernetes with Application Navigator](https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.5/com.ibm.websphere.nd.multiplatform.doc/ae/rcld_cloud_appnav.html).
+The target application can specify either a match label, with an autonomous membership, or a match expression, with a directed membership, for its label selector. For more information, see [Cloud-native applications on Kubernetes with Application Navigator](https://www.ibm.com/support/knowledgecenter/SSAW57_9.0.5/com.ibm.websphere.nd.multiplatform.doc/ae/rcld_cloud_appnav.html).
 
 3. Add the twas-app resource to the target application according to its labeling scheme.
     1. For autonomous membership, update the twas-app resource to have a matching label by using the following command syntax:

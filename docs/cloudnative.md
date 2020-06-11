@@ -1,25 +1,25 @@
-# Cloud native applications on Kubernetes
+# Cloud-native applications on Kubernetes
 
 IBM Application Navigator defines applications as a set of Kubernetes resources that work together to satisfy a particular
-set of business requirements. Cloud native applications are composed of distributed components.
-In a cloud native architecture, each component follows the principles that are specified by
-[12factor.net](https://12factor.net/). These principles specify the logical architecture of a cloud native application as shown in the following diagram:
-![Logical architecture of a cloud native application](images/cloudnative.1.png?raw=true)
+set of business requirements. Cloud-native applications are composed of distributed components.
+In a cloud-native architecture, each component follows the principles that are specified by
+[12factor.net](https://12factor.net/). These principles specify the logical architecture of a cloud-native application as shown in the following diagram:
+![Logical architecture of a cloud-native application](images/cloudnative.1.png?raw=true)
 
-In the diagram, you can see the architecture of a simple cloud native application that is composed of a user-facing component,
+In the diagram, you can see the architecture of a simple cloud-native application that is composed of a user-facing component,
 Web App W. This component calls the Micro Service 1 and Micro Service 2 components. Each component provides a discrete
 function. The following diagram shows the components as Application A. The components work together and satisfy an overall
 business need.
-![Architecture of a simple cloud native application](images/cloudnative.2.png?raw=true)
+![Architecture of a simple cloud-native application](images/cloudnative.2.png?raw=true)
 
 ## Kubernetes applications
 
-The logical architecture of a cloud native application can be implemented and deployed to various environments. In the
+The logical architecture of a cloud-native application can be implemented and deployed to various environments. In the
 following diagram, it is implemented in Java. The architecture uses [Open Liberty](https://openliberty.io/) and deploys to a Kubernetes-based
 cloud platform, such as Red Hat OpenShift. When the architecture is deployed to Kubernetes, the logical
 components turn into various Kubernetes resources as the application is installed.
 
-![Cloud native applications implemented in Java](images/cloudnative.3.png?raw=true)
+![Cloud-native applications implemented in Java](images/cloudnative.3.png?raw=true)
 
 The diagram shows each component that is separately installed to Kubernetes. By following the
 [12 Factor principles](https://12factor.net/), a component owner

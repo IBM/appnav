@@ -15,7 +15,7 @@ WebSphere Application Server Network Deployment cells and Liberty collectives, w
 1. [Installing a sample application](https://github.com/kappnav/README#install-sample-application)
 1. [Creating your first application](https://github.com/kappnav/README/blob/master/how-to-create-applications.md)
 1. [Performing actions with Application Navigator](actions.md)
-1. [Cloud native applications](cloudnative.md)
+1. [Cloud-native applications](cloudnative.md)
 1. [Application transformation scenario](https://youtu.be/h833ZN8KQy0)
 1. [Importing WebSphere Application Server Network Deployment cells](importcell.md)
 1. [Importing Liberty collectives](importcoll.md)
